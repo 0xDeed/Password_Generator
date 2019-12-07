@@ -13,7 +13,6 @@ def encrypt_function(size):
 	if size < 4:
 		print("Password length must contain more than 4 characters")
 		exit()
-
 	n = 0 
 
 	while n < size:
@@ -26,17 +25,16 @@ def encrypt_function(size):
 	#-----------------------
 		
 		r = random.choice(lista)
-
 		resultados = []
-	
 		resultados.append((random.choice(r)))
 		
 		for i in resultados:
-
+			
 			print(i,end="") 
 		n=n+1
 
 if __name__ == "__main__":
+	
 	try:
 		numero = sys.argv[1]
 	except:
