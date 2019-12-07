@@ -34,17 +34,15 @@ def encrypt_function(size):
 		for i in resultados:
 
 			print(i,end="") 
-
 		n=n+1
 
 if __name__ == "__main__":
-
 	try:
 		numero = sys.argv[1]
 	except:
 		print("Example: python genpass.py <password length>")
 		exit()
-
+		
 	encrypt_function(int(numero))
  
 
